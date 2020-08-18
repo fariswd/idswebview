@@ -1,0 +1,101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render app 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }
+>
+  <Image
+    source={
+      Object {
+        "uri": "https://assets.website-files.com/5a1a80a445a0eb000187a6ee/5a5e17799629620001d0331d_IDS%20LOGO%20web.gif",
+      }
+    }
+    style={
+      Object {
+        "height": 100,
+        "width": 100,
+      }
+    }
+  />
+</View>
+`;
+
+exports[`render webview 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "flex": 1,
+          "overflow": "hidden",
+        },
+        undefined,
+      ]
+    }
+  >
+    <RNCWebView
+      cacheEnabled={true}
+      injectedJavaScriptBeforeContentLoadedForMainFrameOnly={true}
+      injectedJavaScriptForMainFrameOnly={true}
+      javaScriptEnabled={true}
+      messagingEnabled={false}
+      onContentProcessDidTerminate={[Function]}
+      onHttpError={[Function]}
+      onLoadingError={[Function]}
+      onLoadingFinish={[Function]}
+      onLoadingProgress={[Function]}
+      onLoadingStart={[Function]}
+      onMessage={[Function]}
+      onNavigationStateChange={[Function]}
+      onShouldStartLoadWithRequest={[Function]}
+      source={
+        Object {
+          "uri": "https://www.indonesiadefenceservices.com/",
+        }
+      }
+      startInLoadingState={true}
+      style={
+        Array [
+          Object {
+            "flex": 1,
+            "overflow": "hidden",
+          },
+          Object {
+            "backgroundColor": "#ffffff",
+          },
+          undefined,
+        ]
+      }
+      useSharedProcessPool={true}
+    />
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "flex": 1,
+          "justifyContent": "center",
+        }
+      }
+    >
+      <ActivityIndicator
+        animating={true}
+        color="#eb4034"
+        hidesWhenStopped={true}
+        size="large"
+      />
+    </View>
+  </View>
+</View>
+`;
