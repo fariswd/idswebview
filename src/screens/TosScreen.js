@@ -8,7 +8,7 @@ import {
 import * as Texts from '../components/Texts'
 import Colors from '../constants/Colors'
 
-export default class TosPage extends React.Component{
+export default class TosScreen extends React.Component{
   render(){
     return (
       <View style={{

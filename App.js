@@ -7,7 +7,7 @@ import {
 
 import WebviewScreen from './src/screens/WebviewScreen'
 import SplashScreen from './src/screens/SplashScreen';
-import TosPage from './src/screens/TosPage';
+import TosScreen from './src/screens/TosScreen';
 import helpers from './src/utils/helpers'
 
 export default class App extends React.Component {
@@ -19,9 +19,12 @@ export default class App extends React.Component {
     }
   }
   componentDidMount(){
+    this.hideSplashScreen()
+  }
+  hideSplashScreen(){
     setTimeout(() => {
-      this.setState({splash: true})
-    }, 2000)
+      this.setState({splash: true});
+    }, 2000);
   }
   toWebview(){
     this.setState({ showWebview: true })
@@ -37,7 +40,7 @@ export default class App extends React.Component {
           <SafeAreaView style={{ flex: 1 }}>
             {showWebview
               ? <WebviewScreen />
-              : <TosPage buttonFn={() => this.toWebview()} />
+              : <TosScreen buttonFn={() => this.toWebview()} />
             }
           </SafeAreaView>
         </View>
