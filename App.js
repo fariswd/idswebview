@@ -8,6 +8,7 @@ import {
 import WebviewScreen from './src/screens/WebviewScreen'
 import SplashScreen from './src/screens/SplashScreen';
 import TosPage from './src/screens/TosPage';
+import helpers from './src/utils/helpers'
 
 export default class App extends React.Component {
   constructor(){
@@ -32,7 +33,7 @@ export default class App extends React.Component {
     } else {
       return (
         <View style={{flex: 1}}>
-          <StatusBar barStyle="dark-content"/>
+          {!helpers.isAndroid && <StatusBar barStyle="dark-content"/>}
           <SafeAreaView style={{ flex: 1 }}>
             {showWebview
               ? <WebviewScreen />
